@@ -1,4 +1,11 @@
-# Trabalho da disciplina de Computação Gráfica
+# Trabalho da disciplina da DCA0114 - Computação Gráfica
+
+Professor: Davi Henrique dos Santos
+
+Alunos:
+- Alisson Sousa Moreira
+- Estéfane George Macedo de Lacerda
+
 
 # Raytracing
 
