@@ -2,6 +2,8 @@
 
 # Raytracing
 
+![alt text](https://github.com/estgeorge/raytracing/blob/main/image.png)
+
 # Como executar o programa
 
 ### Instalação de dependências
