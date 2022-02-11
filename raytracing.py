@@ -8,6 +8,18 @@ def nearest_intersected_object(objects, ray_origin, ray_direction):
     """
     Determina qual o objeto intersectado pelo raio que
     é mais próximo da origem do raio.  
+
+    Parameters
+    ----------
+    objects : Lista de objetos gráficos
+    ray_origin : Origem do raio
+    ray_direction : Direção do raio
+
+    Returns
+    ------
+    nearest_object: Objeto intersectado mais próximo
+    nearest_index_tri: Indice no array de triangulos do mesh (se for um mesh)
+    nearest_location: Ponto de insecção
     """
     nearest_object = None
     min_distance = np.inf
@@ -39,11 +51,6 @@ def is_shadowed(objects, point, toLight, light):
 
 
 start_time = time.time()
-camera = np.array([0, 0, 1])  # posição da camera
-width = 600
-height = 400
-max_depth = 3  # número máximo de reflexões do raio
-
 
 # Lista de fontes de luz
 lights = [
@@ -79,6 +86,10 @@ objects = [
                             reflectivity=0))
 ]
 
+camera = np.array([0, 0, 1])  # posição da camera
+width = 600
+height = 400
+max_depth = 3  # número máximo de reflexões do raio
 ratio = float(width) / height
 # esquerda, superior, direita, inferior
 screen = (-1, 1 / ratio, 1, -1 / ratio)
