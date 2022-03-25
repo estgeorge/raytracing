@@ -131,8 +131,8 @@ for i, y in enumerate(np.linspace(screen[1], screen[3], height)):
                 intersection, normal, toCamera, lights)
 
             # Computa a contribuição da reflexão
-            color += reflection * illumination
-            reflection *= nearest_object.getReflectivity()
+            color = color + reflection * illumination
+            reflection = reflection * nearest_object.getReflectivity()
 
             origin = shifted_point
             direction = reflected(direction, normal)
